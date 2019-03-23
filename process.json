@@ -1,0 +1,10 @@
+{
+	"apps": [
+		{
+			"name": "bot",
+			"script": "./index.js",
+			"exec_mode": "fork",
+			"max_restarts": 20
+		}
+	]
+}
