@@ -4,7 +4,6 @@ const AWS = require("aws-sdk");
 const { TELEGRAM_TOKEN, SQS_URL, AWS_REGION } = process.env;
 AWS.config.update({ region: AWS_REGION });
 const sqs = new AWS.SQS({ apiVersion: "2012-11-05" });
-const stat = util.promisify(sqs.sendMessage);
 
 const bot = new TelegramBot(TELEGRAM_TOKEN, {
   polling: true
